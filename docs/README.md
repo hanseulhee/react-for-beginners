@@ -4,6 +4,7 @@
 - [코드 정리](#3)
 
 <div id="1"></div>
+
 ## useEffect
 
 react.js는 변화가 일어날 때 component를 refresh한다.
@@ -114,6 +115,7 @@ component가 파괴될 때 function을 실행하기 위해 hiFn이 byFn을 retur
 
 
 <div id="3"></div>
+
 ## 코드 정리
 
 ```js
@@ -144,6 +146,18 @@ const [keyword, setKeyword] = useState("");
 ```
 
 첫 번째 아이템이 value, 두 번째 아이템이 해당 value를 modify하는 function이다.
+
+
+
+```js
+const food = [1, 2, 3, 4]
+[6, food] // [6, Array(4)]
+[6, ...food] // [6, 1, 2, 3, 4]
+```
+
+...을 통해 6에 food array의 element들을 더해 새로운 array를 만든다.
+
+
 
 **useEffect**
 ```js
