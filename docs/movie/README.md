@@ -1,10 +1,10 @@
-# Movie
+## Movie
 
 [yts API](https://yts.mx/api/v2/list_movies.json?minimum_rating=8.8&sort_by=year)
 
-## async-await
+### async-await
 
-## React Router
+### React Router
 
 React.js에서 페이지 전환
 
@@ -15,7 +15,7 @@ npm install react-router-dom
 ```js
 npm i react-router-dom@5.3.0
 ```
-## Router
+### Router
 
 Hash Router vs Browser Router
 
@@ -27,29 +27,51 @@ Browser Router에서 URL은 보통의 웹사이트처럼 생겼다. ex) localhos
 Hash Router ex) localhost:3000/#/movie
 
 
-## Switch
+
+### Switch
 
 Route(=url)을 찾는 역할을 한다. Route를 찾으면 component를 렌더링한다.
 
-## Link
+
+
+### Link
 
 a href = ""를 이용할 경우 화면 전체가 실행된다. 
 Link는 브라우저 새로고침 없이도 유저를 다른 페이지로 이동시켜주는 컴포넌트다.
 
 
-## Parameters
+
+### Parameters
+
 
 **useParams**
+
 
 url의 상세정보를 알려준다.
 
 
-## 코드 정리
+### Publishing
+
+github pages에 업로드 할 수 있게 해주는 나이스 패키지
+
+
+```js
+npm i gh-pages
+```
+
+### Breaking Change
+
+버전을 업데이트 하면서 코드가 깨져서 코드를 수정해야하는 경우
+
+
+
+### 코드 정리
 
 ```js
 import { BrowserRouter as Router, Switch, Route } from "react-router-dom";
 import Detail from "./routes/Detail";
 import Home from "./routes/Home";
+
 function App() {
   return (
     <Router>
@@ -68,6 +90,3 @@ function App() {
 export default App;
 ```
 Router를 먼저 렌더링해주고 그 안에 들어가는 것들이 유저가 있는 url에 따라 유저에게 보여진다. React Router에선 두개의 Route를 한번에 렌더링 할 수 있지만 Switch component를 통해 하나의 Route만 렌더링하였다. 
-
-
-Home이 Movie 컴포넌트를 렌더링한다.
