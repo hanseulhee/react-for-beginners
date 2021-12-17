@@ -39,8 +39,9 @@ Link는 브라우저 새로고침 없이도 유저를 다른 페이지로 이동
 
 ## Parameters
 
+**useParams**
 
-
+url의 상세정보를 알려준다.
 
 
 ## 코드 정리
@@ -67,3 +68,6 @@ function App() {
 export default App;
 ```
 Router를 먼저 렌더링해주고 그 안에 들어가는 것들이 유저가 있는 url에 따라 유저에게 보여진다. React Router에선 두개의 Route를 한번에 렌더링 할 수 있지만 Switch component를 통해 하나의 Route만 렌더링하였다. 
+
+
+Home이 Movie 컴포넌트를 렌더링한다.
