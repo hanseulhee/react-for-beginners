@@ -1,14 +1,21 @@
 import PropTypes from "prop-types";
 import { Link } from "react-router-dom";
+import styles from "./Movie.module.css";
+
 function Movie({ id, coverImg, title, summary, genres }) {
   // Movie component는 이 properties를 부모 component로부터 받아온다.
   return (
     <div>
       <img src={coverImg} alt={title} />
       <h2>
-        <Link to={`/movie${id}`}>{title}</Link>
+        <Link to={`/movie/${id}`}>{title}</Link>
       </h2>
       <p>{summary.length > 235 ? `${summary.slice(0, 235)}...` : summary}</p>
+      <ul>
+          {genres.map((g) => (
+            <li key={g}>{g}</li>
+          ))}
+        </ul>
     </div>
   );
 }

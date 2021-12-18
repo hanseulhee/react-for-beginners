@@ -24,6 +24,7 @@ url의 생김새 차이, Browser Router가 더 깔끔하게 생겨서 사용.
 
 
 Browser Router에서 URL은 보통의 웹사이트처럼 생겼다. ex) localhost:3000/movie
+
 Hash Router ex) localhost:3000/#/movie
 
 
