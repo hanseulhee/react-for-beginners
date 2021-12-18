@@ -5,7 +5,11 @@ body {
   width: 100vw;
   height: 100vh;
   box-sizing: border-box;
+
+  padding-top: 45px;
   font-family: "Noto Sans", sans-serif;
+  background-color: #282833;
+  color: white;
 }
 
 * {
@@ -14,7 +18,8 @@ body {
   padding: 0;
 }
 
-button {
+button,
+img {
   all: unset;
 }
 
