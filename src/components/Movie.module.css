@@ -1,0 +1,17 @@
+.eachMovie {
+  margin-right: 15px;
+  margin-top: 50px;
+}
+
+.coverImg {
+  all: unset;
+  width: 180px;
+  border-radius: 20px;
+}
+
+.eachTitle {
+  all: unset;
+  color: rgb(255, 255, 255, 0.8);
+  font-weight: 400;
+  font-size: 14px;
+}

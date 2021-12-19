@@ -1,0 +1,25 @@
+.homeTool {
+  overflow-x: scroll;
+}
+
+.homeTool::-webkit-scrollbar {
+  all: unset;
+}
+
+.loading {
+  width: 250px;
+}
+
+.movieTool {
+  display: flex;
+  flex-direction: row;
+  margin: 10px 10px 0px 20px;
+}
+.title {
+  all: unset;
+  position: fixed;
+  font-size: 23px;
+  font-weight: 700;
+  margin-left: 20px;
+  color: rgb(255, 255, 255, 0.9);
+}
