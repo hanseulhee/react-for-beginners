@@ -25,7 +25,7 @@ function Home() {
           <img src={Loading} alt="loading" className={styles.loading} />
         </div>
       ) : (
-        <div>
+        <div className={styles.homeBottomTool}>
           <h2 className={styles.title}>Movie</h2>
           <div className={styles.movieTool}>
             {movies.map((movie) => (
@@ -40,6 +40,7 @@ function Home() {
               />
             ))}
           </div>
+          <h4 className={styles.smallTitle}>3D</h4>
         </div>
       )}
     </div>

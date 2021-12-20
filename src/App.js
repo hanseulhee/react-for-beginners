@@ -5,7 +5,6 @@ import Navbar from "./components/Navbar";
 import useViewport from "../src/Hooks/useViewport";
 import "./global.css";
 import Footer from "./components/Footer";
-import Button from "@mui/material/Button";
 
 function App() {
   const { width } = useViewport();
