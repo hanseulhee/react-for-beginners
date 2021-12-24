@@ -1,7 +1,6 @@
 import Movie from "../components/Movie";
 import { useState, useEffect } from "react";
 import styles from "./Home.module.css";
-import Loading from "../img/loading.png";
 
 function Home() {
   const [loading, setLoading] = useState(true);
@@ -21,9 +20,7 @@ function Home() {
   return (
     <div className={styles.homeTool}>
       {loading ? (
-        <div>
-          <img src={Loading} alt="loading" className={styles.loading} />
-        </div>
+        <h1>Loading....</h1>
       ) : (
         <div className={styles.homeBottomTool}>
           <h2 className={styles.title}>Movie</h2>

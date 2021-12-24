@@ -36,7 +36,6 @@ function Detail() {
               </h5>
               
               <h3 className={styles.detailTitle}>{movieDetail.summary}</h3>
-              <button className={styles.playButton}><h2>▶️ Play</h2></button>
             </div>
           </div>
         </div>

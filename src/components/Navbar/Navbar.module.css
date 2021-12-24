@@ -4,12 +4,47 @@
   top: 0;
   left: 0;
   right: 0;
-  background-color: rgb(40, 40, 51, 0.2);
+  background-color: rgb(82, 90, 93, 0.8);
 }
 
-.navContainer__logo {
-  width: 30px;
-  margin: 20px 20px;
+.navTopTool {
+  display: flex;
+  width: 100%;
+  height: 30px;
+
+  padding: 0px 40px;
+  background-color: #474e50;
+}
+.navTopTool__link {
+  all: unset;
+  color: #949595;
+  cursor: pointer;
+  font-size: 12px;
+  font-weight: 700;
+  margin-right: 5px;
 }
 
+.navBottomTool {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  padding: 10px 40px;
+}
 
+.navBottomTool__logo {
+  color: white;
+  cursor: pointer;
+
+  font-family: "Noto Sans", sans-serif;
+  font-size: 28px;
+  font-weight: 800;
+}
+
+.navBottomToolCenter__link {
+  all: unset;
+  color: rgb(255, 255, 255, 0.8);
+  cursor: pointer;
+  font-size: 18px;
+  font-weight: 600;
+  margin-right: 50px;
+}
