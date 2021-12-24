@@ -5,12 +5,14 @@ import Navbar from "./components/Navbar";
 import useViewport from "../src/Hooks/useViewport";
 import "./global.css";
 import Footer from "./components/Footer";
+import Slider from "./components/Carousel/Slider";
 
 function App() {
   const { width } = useViewport();
   return (
     <Router>
       <Navbar />
+      <Slider />
       <Switch>
         <Route path="/movie/:id">
           <Detail />
