@@ -1,6 +1,11 @@
 # SVING
 
 
+## Result
+
+
+
+
 ## API
 
 [yts API](https://yts.mx/api)
@@ -25,4 +30,13 @@ npm install react-slick --save
 
 ```js
 npm install slick-carousel --save
+```
+
+## Publish
+
+```js
+npm i gh-pages
+npm run build
+
+npm run deploy
 ```

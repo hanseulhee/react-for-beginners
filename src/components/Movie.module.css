@@ -1,0 +1,67 @@
+.eachMovie {
+  position: relative;
+  height: 400px;
+}
+.eachMovie:hover {
+  animation: motion 1.5s;
+}
+.coverImg {
+  border-radius: 6px;
+  width: 200px;
+  height: 280px;
+  object-fit: fill;
+  cursor: pointer;
+}
+
+.eachTitle {
+  color: #c8c8c8;
+  font-size: 14px;
+  font-weight: 400;
+  margin-top: 6px;
+}
+
+.movieHover {
+  all: unset;
+  position: absolute;
+  opacity: 0;
+  left: 5px;
+  width: 180px;
+  top: 130px;
+  transition: all 0.4s ease-in-out;
+}
+.eachMovie:hover .movieHover {
+  opacity: 1;
+}
+
+.eachMovie:hover .coverImg {
+  filter: brightness(40%);
+}
+
+.movieHoverTitle {
+  color: #ededed;
+  font-size: 15px;
+  font-weight: 800;
+}
+
+.movieHoverSummary {
+  color: #646464;
+  font-weight: 600;
+  font-size: 12px;
+}
+
+.movieHoverRating {
+  font-size: 9px;
+  color: #969696;
+}
+
+@keyframes motion {
+  0% {
+    margin-top: 0px;
+  }
+  50% {
+    margin-top: -10px;
+  }
+  100% {
+    margin-top: 0px;
+  }
+}

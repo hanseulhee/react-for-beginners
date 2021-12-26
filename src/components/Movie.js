@@ -8,14 +8,20 @@ function Movie({ id, coverImg, title, year, rating, summary, genres }) {
     <div className={styles.eachMovie}>
       <Link to={`/movie/${id}`}>
         <img src={coverImg} alt={title} className={styles.coverImg} />
+        <div className={styles.movieHover}>
+          <span className={styles.movieHoverTitle}>{title}</span>
+          <p className={styles.movieHoverRating}>⭐ {rating} / 10</p>
+          {/* <ul className={styles.movieHoverUl}>
+            {genres.map((g) => (
+              <li key={g}>{g} / </li>
+            ))}
+          </ul> */}
+          <p className={styles.movieHoverSummary}>
+            {summary.length > 70 ? `${summary.slice(0, 70)}...` : summary}
+          </p>
+        </div>
         <h2 className={styles.eachTitle}>{title}</h2>
       </Link>
-      {/* <p>{summary.length > 235 ? `${summary.slice(0, 235)}...` : summary}</p>
-      <ul>
-          {genres.map((g) => (
-            <li key={g}>{g}</li>
-          ))}
-        </ul> */}
     </div>
   );
 }

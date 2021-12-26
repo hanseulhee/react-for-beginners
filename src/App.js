@@ -12,7 +12,7 @@ function App() {
   return (
     <Router>
       <Navbar />
-      <Slider />
+    
       <Switch>
         <Route path="/movie/:id">
           <Detail />
