@@ -1,6 +1,6 @@
 .eachMovie {
   position: relative;
-  height: 400px;
+  height: 370px;
 }
 .eachMovie:hover {
   animation: motion 1.5s;

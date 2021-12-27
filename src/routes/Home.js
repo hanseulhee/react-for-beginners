@@ -12,7 +12,7 @@ function Home() {
   const getMovies = async () => {
     const json = await (
       await fetch(
-        `https://yts.mx/api/v2/list_movies.json?minimum_rating=8.8&limit=6&sort_by=year`
+        `https://yts.mx/api/v2/list_movies.json?minimum_rating=8.8&limit=12&sort_by=year`
       )
     ).json();
     setMovies(json.data.movies);
@@ -43,12 +43,9 @@ function Home() {
                 />
               ))}
             </div>
-            <h2 className={styles.title}>인기 영화</h2>
-
             <div className={styles.cf}>
               <img src={cf} alt="img" />
             </div>
-            <h2 className={styles.title}>#영화 #애니메이션</h2>
 
             <h2 className={styles.title}>이벤트</h2>
             <div className={styles.eventTool}>

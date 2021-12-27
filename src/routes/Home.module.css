@@ -26,6 +26,10 @@
   justify-items: stretch;
 }
 
+.cf {
+  margin: 50px 0px;
+}
+
 .cf > img {
   width: 100%;
 }
@@ -39,5 +43,6 @@
   border-radius: 0.25rem;
   max-width: 430px;
   margin-right: 18px;
+  margin-bottom: 30px;
   cursor: pointer;
 }
