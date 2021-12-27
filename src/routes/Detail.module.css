@@ -1,0 +1,54 @@
+.detailTool {
+  margin: 20px 40px;
+}
+
+.detailTool > h1 {
+  color: #e6e6e6;
+  font-weight: 800;
+  font-size: 35px;
+}
+
+.detailTitle {
+  font-weight: 400;
+  font-size: 27px;
+}
+
+.detailYear {
+  font-weight: 700;
+  font-size: 14px;
+  color: #626262;
+  margin: 5px 0px;
+}
+.detailBottomTool {
+  display: flex;
+  flex-direction: row;
+  margin-top: 40px;
+}
+.detailSummaryBottomTool {
+  margin-left: 60px;
+}
+.detailImg {
+  border-radius: 6px;
+}
+
+.detailSmallTitle {
+  font-size: 19px;
+  font-weight: 400;
+}
+.movieUl {
+  display: flex;
+  font-size: 15px;
+  color: #999;
+  margin-top: 20px;
+}
+
+.detailRating {
+  font-size: 12px;
+  font-weight: 400;
+}
+
+.detailSummary {
+  font-weight: 400;
+  color: #999;
+  font-size: 15px;
+}

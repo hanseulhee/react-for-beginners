@@ -11,11 +11,6 @@ function Movie({ id, coverImg, title, year, rating, summary, genres }) {
         <div className={styles.movieHover}>
           <span className={styles.movieHoverTitle}>{title}</span>
           <p className={styles.movieHoverRating}>⭐ {rating} / 10</p>
-          {/* <ul className={styles.movieHoverUl}>
-            {genres.map((g) => (
-              <li key={g}>{g} / </li>
-            ))}
-          </ul> */}
           <p className={styles.movieHoverSummary}>
             {summary.length > 70 ? `${summary.slice(0, 70)}...` : summary}
           </p>

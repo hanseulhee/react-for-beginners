@@ -19,23 +19,30 @@ function Detail() {
   return (
     <div className={styles.detailTool}>
       {loading ? (
-        <h1>Loading....</h1>
+        <h1>I'm working on it ...</h1>
       ) : (
-        <div>
-          <img
-            src={movieDetail.medium_cover_image}
-            alt={movieDetail.id}
-            className={styles.detailImg}
-          />
+        <div className={styles.detailTool}>
           <div className={styles.detailSummaryTool}>
-            <div className={styles.summaryTool}>
-              <h3 className={styles.detailTitle}>{movieDetail.title}</h3>
-              <h3 className={styles.detailYear}>{movieDetail.year}</h3>
+            <h3 className={styles.detailTitle}>{movieDetail.title}</h3>
+            <h3 className={styles.detailYear}>{movieDetail.year}</h3>
+          </div>
+          <div className={styles.detailBottomTool}>
+            <img
+              src={movieDetail.medium_cover_image}
+              alt={movieDetail.id}
+              className={styles.detailImg}
+            />
+            <div className={styles.detailSummaryBottomTool}>
+              <h3 className={styles.detailSmallTitle}>{movieDetail.title}</h3>
               <h5 className={styles.detailRating}>
-              ⭐ {movieDetail.rating} / 10
+                ⭐ {movieDetail.rating} / 10
               </h5>
-              
-              <h3 className={styles.detailTitle}>{movieDetail.summary}</h3>
+              <ul className={styles.movieUl}>
+                {movieDetail.genres.map((g) => (
+                  <li key={g}> {g} . </li>
+                ))}
+              </ul>
+              <h3 className={styles.detailSummary}>{movieDetail.summary}</h3>
             </div>
           </div>
         </div>
